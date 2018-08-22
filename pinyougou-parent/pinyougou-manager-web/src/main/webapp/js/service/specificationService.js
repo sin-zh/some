@@ -14,4 +14,7 @@ app.service('specificationService', function ($http) {
     this.deleteSpecificationWithSpecificationOptionsByids = function (ids) {
         return $http.get('/specification/deleteSpecificationWithSpecificationOptionsByids.do?ids=' + ids);
     }
+    this.getSpecificationList = function () {
+        return $http.get('/specification/specificationListForTypeTemplate.do');
+    }
 })

@@ -5,6 +5,7 @@ import com.pinyougou.pojovo.SpecificationWithSpecificationOptions;
 import com.pinyougou.result.ResultPage;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 服务层接口
@@ -22,4 +23,6 @@ public interface SpecificationService {
     void updateSpecificationWithSpecificationOptions(SpecificationWithSpecificationOptions specificationWithSpecificationOptions);
 
     void deleteSpecificationWithSpecificationOptionsByids(Long[] ids);
+
+    List<Map> specificationListForTypeTemplate();
 }

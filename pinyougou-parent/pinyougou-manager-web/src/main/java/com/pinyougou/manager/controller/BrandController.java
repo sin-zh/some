@@ -1,6 +1,7 @@
 package com.pinyougou.manager.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import com.pinyougou.result.Result;
 import com.pinyougou.result.ResultPage;
@@ -42,5 +43,10 @@ public class BrandController {
     @RequestMapping("/delete")
     public void delete(Long[] ids) {
         brandService.delete(ids);
+    }
+
+    @RequestMapping("/brandListForTypeTemplate")
+    public List<Map> brandListForTypeTemplate() {
+        return brandService.brandListForTypeTemplate();
     }
 }

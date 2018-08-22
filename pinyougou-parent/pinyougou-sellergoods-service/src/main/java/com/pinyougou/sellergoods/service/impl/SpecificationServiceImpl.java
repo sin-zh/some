@@ -1,6 +1,8 @@
 package com.pinyougou.sellergoods.service.impl;
 
 import java.util.List;
+import java.util.Map;
+
 
 import com.pinyougou.mapper.TbSpecificationMapper;
 import com.pinyougou.mapper.TbSpecificationOptionMapper;
@@ -91,5 +93,10 @@ public class SpecificationServiceImpl implements SpecificationService {
             specificationOptionExample.createCriteria().andSpecIdEqualTo(id);
             specificationOptionMapper.deleteByExample(specificationOptionExample);
         }
+    }
+
+    @Override
+    public List<Map> specificationListForTypeTemplate() {
+        return specificationMapper.specificationListForTypeTemplate();
     }
 }

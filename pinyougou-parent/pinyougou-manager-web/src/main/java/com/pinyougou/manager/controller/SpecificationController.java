@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.dubbo.config.annotation.Reference;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * controller
@@ -47,5 +48,10 @@ public class SpecificationController {
     @RequestMapping("/deleteSpecificationWithSpecificationOptionsByids")
     public void deleteSpecificationWithSpecificationOptionsByids(Long[] ids) {
           specificationService.deleteSpecificationWithSpecificationOptionsByids(ids);
+    }
+
+    @RequestMapping("/specificationListForTypeTemplate")
+    public List<Map> specificationListForTypeTemplate(){
+        return specificationService.specificationListForTypeTemplate();
     }
 }

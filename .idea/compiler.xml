@@ -16,15 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="common" target="1.7" />
-      <module name="dao" target="1.7" />
-      <module name="manager-web" target="1.7" />
-      <module name="pinyougou-parent" target="1.7" />
       <module name="pinyoukupojo" target="1.7" />
-      <module name="pojo" target="1.7" />
-      <module name="sellergoods-interface" target="1.7" />
-      <module name="sellergoods-service" target="1.7" />
-      <module name="shop-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
