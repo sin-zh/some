@@ -5,8 +5,6 @@ import com.pinyougou.pojo.TbTypeTemplate;
 import com.pinyougou.result.Result;
 import com.pinyougou.result.ResultPage;
 import com.pinyougou.sellergoods.service.TypeTemplateService;
-import org.apache.commons.logging.LogFactory;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
